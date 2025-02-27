@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Principal</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="img/mundoGym.jpg" type="image/x-icon">
+</head>
+
+<body id="main">
+  <nav class="navbar navbar-expand-lg navbar-dark bg" id="principal">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="menu.html"><img src="img/mundoGym.jpg" width="70px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-4 text-white" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Mantenimientos
+            </a>
+            <ul class="dropdown-menu bg-transparent border-0" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item fw-bold bg-gradient rounded" href="frm/ciudad/ciudad.php">Ciudades</a>
+              </li>
+              <li>
+                <a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/clientes/clientes.php">Clientes</a>
+              </li>
+              <li>
+                <a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/ejercicios/ejercicios.php">Ejercicios</a>
+              </li>
+              <li>
+                <a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/rutina/registrar_rutina.php">Rutinas de
+                  Ejercicios</a>
+              </li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/entrenadores/entrenadores.php">Entrenadores</a></li>
+              <li>
+                <a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/asistencia/registrar_asistencia.php">Registrar Asistencia</a>
+              </li>
+              <li><a class="dropdown-item fw-bold rounded mt-1" href="frm/medidas/registrar_medida.php">Medidas</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="frm/marcas/marcas.php">Marcas</a>
+              </li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/articulos/articulos.php">Articulos</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/proveedores/proveedores.php">Proveedores</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="frm/roles/roles.php">Roles</a>
+              </li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/usuarios/usuarios.php">Usuarios</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-4 text-white" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Compras
+            </a>
+            <ul class="dropdown-menu bg-transparent border-0" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="frm/compras/registrar_compras.php">Registrar Compras</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="frm/compras/registrar_pagocompras.php">Registrar pagos por compras</a>
+              </li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="#">Anular Compras</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="#">Ajuste de Stock</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-4 text-white" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Facturación
+            </a>
+            <ul class="dropdown-menu bg-transparent border-0" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="#">Registrar Pagos</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="frm/ventas/registrar_ventas.php">Registrar Ventas</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1" href="#">Gestión de Membresias</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-4 text-white" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Consultas
+            </a>
+            <ul class="dropdown-menu bg-transparent border-0" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/asistencia/consultar_asistencia.php">Consultar Asistencias</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/rutina/consultar_rutinas.php">Consultar Rutinas</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/medidas/consultar_medidas.php">Consultar Medidas</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/compras/consultar_compras.php">Consultar Compras</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/ventas/consultar_ventas.php">Consultar Ventas</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/asistencia/registro_asistencia.php">Consultar Pago a Entrenadores</a></li>
+              <li><a class="dropdown-item fw-bold bg-gradient rounded mt-1"
+                  href="frm/asistencia/registro_asistencia.php">Consultar Pago de Membresias</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions">
+            <span id="sesion"></span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Modificar Contraseña</a></li>
+            <li onclick="cerrarSesion()"><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end rounded-3 bg border-0" data-bs-scroll="false" tabindex="-1"
+    id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title border-2" id="offcanvasWithBothOptionsLabel"></h5>
+      <button type="button" class="btn text-white fs-4 bg-transparent" data-bs-dismiss="offcanvas"
+        aria-label="Close">X</button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="center bg-transparent border-0">
+        <span id="acerca_de"></span><br><br>
+      </div>
+      <div class="text-white">
+        <span id="nombre"></span><br>
+        <span id="ciudad"></span><br>
+        <span id="direccion"></span><br>
+        <span id="telefono"></span><br>
+        <span id="edad"></span><br>
+        <span id="rol"></span><br>
+      </div>
+      <div class="row mt-3">
+        <div class="col-7">
+          <a href="frm/usuarios/modificar_password.php" class="btn text-white bg-gradient border-0">Modificar Contraseña</a>
+        </div>
+        <div class="col-5">
+          <button type="button" class="btn text-white bg-gradient border-0" onclick="cerrarSesion()">Cerrar
+            Sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  <script src="js/funciones.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      verificarSesion();
+      usuario_logueado();
+      $("#sesion").html('<img src="img/usuarios/' + localStorage.imagen + '"  class="rounded-circle" width="60px" height="50" />');
+      $("#acerca_de").html('<img src="img/usuarios/' + localStorage.imagen + '"  class="rounded" width="300px" height="280" />');
+      $("#nombre").html(localStorage.nombre);
+      $("#ciudad").html(localStorage.ciudad);
+      $("#direccion").html(localStorage.direccion);
+      $("#telefono").html(localStorage.telefono);
+      $("#edad").html(localStorage.edad);
+      $("#rol").html(localStorage.rol);
+    });
+
+  </script>
+
+</body>
+
+</html>
